@@ -1,0 +1,17 @@
+http://home.wlu.edu/~whaleyt/MPI/Examples/Example3.htm
+https://people.sc.fsu.edu/~jburkardt/cpp_src/random_mpi/random_mpi.cpp
+http://www.hpc.cineca.it/content/solution-9
+https://people.sc.fsu.edu/~jburkardt/cpp_src/prime_mpi/prime_mpi.cpp
+
+
+
+
+
+mpicc hello.c -o hello
+mpirun -np 4 ./hello
+
+mpic++ random_mpi.cpp -o random_mpi
+mpirun -np 4 ./random_mpi
+
+mpicc random.c -o random
+mpirun -np 4 ./randomAvg 2 1000
